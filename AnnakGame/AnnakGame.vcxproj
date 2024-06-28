@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actions.cpp" />
     <ClCompile Include="AnnakGame.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Command.cpp" />
@@ -137,6 +138,8 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actions.h" />
+    <ClInclude Include="AnnakGame.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Configuration.h" />

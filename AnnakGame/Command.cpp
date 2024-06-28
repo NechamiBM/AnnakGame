@@ -22,4 +22,3 @@ const string Command::MAKE_EMPTY = "MakeEmpty";
 const string Command::RAIN = "Rain";
 const string Command::ROBBER = "Robber";
 const string Command::MAKE_ROBBER = "MakeRobber";
-
