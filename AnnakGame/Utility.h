@@ -16,10 +16,10 @@ static inline std::vector<std::string> split(std::string s) {
     std::string part;
     std::vector<std::string> strings;
     while ((pos = s.find(' ')) != std::string::npos) {
-        strings.push_back(s.substr(0, pos));
+        strings.emplace_back(s.substr(0, pos));
         s.erase(s.begin(), s.begin() + (pos + 1));
     }
-    strings.push_back(s);
+    strings.emplace_back(s);
     return strings;
 }
 
@@ -29,7 +29,7 @@ static inline void read_lines(const std::string& file, std::vector<std::string>&
     while (std::getline(infile, line))
     {
         strip(line);
-        lines.push_back(line);
+        lines.emplace_back(line);
     }
 }
 

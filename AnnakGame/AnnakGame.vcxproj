@@ -139,7 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actions.h" />
-    <ClInclude Include="AnnakGame.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Configuration.h" />

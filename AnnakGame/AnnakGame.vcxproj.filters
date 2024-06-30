@@ -71,9 +71,6 @@
     <ClInclude Include="Village.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AnnakGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Actions.h">
       <Filter>Header Files</Filter>
     </ClInclude>

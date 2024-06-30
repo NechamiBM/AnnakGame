@@ -10,5 +10,8 @@ public:
 
 
 	static void select(World& world, shared_ptr<Command> command);
+	static void work(World& world, shared_ptr<Command> command);
+	static void wait(World& world, shared_ptr<Command> command);
+	static void rain(World& world, shared_ptr<Command> command);
 };
 

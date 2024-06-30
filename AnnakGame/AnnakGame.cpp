@@ -7,7 +7,6 @@
 #include "Configuration.h"
 #include "Tile.h"
 #include "World.h"
-#include "AnnakGame.h"
 #include "Actions.h"
 using namespace std;
 
@@ -22,6 +21,12 @@ void startState(World& world, vector<shared_ptr<Command>> commands) {
 void step(World& world, shared_ptr<Command> command) {
 	if (command->name == Command::SELECT)
 		Actions::select(world,command);
+	else if (command->name == Command::WORK)
+		Actions::work(world, command);
+	else if (command->name == Command::WAIT)
+		Actions::wait(world, command);
+	else if (command->name == Command::RAIN)
+		Actions::rain(world, command);
 }
 
 string assert(World& world, string assertCommand) {
