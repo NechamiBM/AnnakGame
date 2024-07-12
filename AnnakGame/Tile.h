@@ -2,9 +2,10 @@
 #include <vector>
 #include <string>
 #include "Configuration.h"
+#include "Entity.h"
 using namespace std;
 
-class Tile
+class Tile :public Entity
 {
 	int category;
 	string categoryString;
@@ -20,5 +21,7 @@ public:
 	vector<vector<int>>& getGrid() { return grid; }
 	void setResourceCount(int cnt) { resourceCount = cnt; }
 	void addPeople(int cnt) { peopleCount += cnt; }
+
+	string getEntity() override;
 };
 

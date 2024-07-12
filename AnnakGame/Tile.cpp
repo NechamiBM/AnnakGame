@@ -15,3 +15,8 @@ Tile::Tile(int category) :category(category), resourceCount(0) {
 	if (it != Configuration::startingResources().end())
 		resourceCount = it->second;
 }
+
+string Tile::getEntity()
+{
+	return categoryString;
+}
